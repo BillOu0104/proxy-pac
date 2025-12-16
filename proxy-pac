@@ -17,7 +17,7 @@ function FindProxyForURL(url, host) {
 
     for (var i = 0; i < proxyList.length; i++) {
         if (dnsDomainIs(host, proxyList[i]) || dnsDomainIs(host, "." + proxyList[i])) {
-            return "PROXY 192.168.1.50:7890"; // ← 改成你的电脑局域网IP和端口！
+            return "PROXY 172.19.48.103:7890"; // ← 改成你的电脑局域网IP和端口！
         }
     }
 
